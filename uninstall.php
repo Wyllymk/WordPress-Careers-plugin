@@ -7,7 +7,7 @@
  */
 
 if(!defined('WP_UNINSTALL_PLUGIN')){
-    die;
+    exit;
 }
 
 if (!get_option('plugin_do_uninstall', false)) exit;
