@@ -23,9 +23,3 @@ foreach($careers as $career){
 // $wpdb->query("DELETE FROM wp_posts WHERE post_type = 'careers'");
 // $wpdb->query("DELETE FROM wp_postmeta WHERE post_id NOT IN (SELECT id FROM wp_posts) ");
 // $wpdb->query("DELETE FROM wp_term_relationships WHERE object_id NOT IN (SELECT id FROM wp_posts) ");
-
-// Delete the taxonomy and its associated terms
-global $wpdb;
-$wpdb->query("DELETE FROM {$wpdb->prefix}terms WHERE term_id IN (SELECT term_id FROM {$wpdb->prefix}term_taxonomy WHERE taxonomy = 'location')");
-$wpdb->query("DELETE FROM {$wpdb->prefix}term_taxonomy WHERE taxonomy = 'location'");
-$wpdb->query("DELETE FROM {$wpdb->prefix}term_relationships WHERE object_id NOT IN (SELECT id FROM {$wpdb->prefix}posts)");
