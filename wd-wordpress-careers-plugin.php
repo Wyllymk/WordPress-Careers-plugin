@@ -208,4 +208,5 @@ if (class_exists('WdWordpressCareers')){
 }
     
 register_activation_hook( __FILE__, array($wdWordpressCareers, 'activate' ));
+
 register_deactivation_hook( __FILE__, array($wdWordpressCareers, 'deactivate' )); 

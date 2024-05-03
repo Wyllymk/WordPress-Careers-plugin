@@ -12,7 +12,7 @@ if(!defined('WP_UNINSTALL_PLUGIN')){
 
 // Clear database stored data
 
-$careers = get_posts( array( 'post_type' => 'careers', 'numberposts' => -1 ) );
+$careers = get_posts( array( 'post_type' => 'careers', 'posts_per_page' => -1 ) );
 
 foreach($careers as $career){
     wp_delete_posts($career->ID, true);
