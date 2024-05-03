@@ -29,11 +29,6 @@ You can use the following shortcode to display job listings on any page or post:
 
 You can also use the provided widget to display job listings in widgetized areas of your theme.
 
-## Screenshots
-
-![Screenshot 1](https://yourwebsite.com/path/to/screenshot-1.png)
-![Screenshot 2](https://yourwebsite.com/path/to/screenshot-2.png)
-
 ## Contributing
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests on [GitHub](https://github.com/Wyllymk/wd-wordpress-careers-plugin).
@@ -48,5 +43,4 @@ This plugin is licensed under the GPL v2 or later. See the [LICENSE](LICENSE) fi
 
 ## Links
 
-- [Plugin Demo](https://yourwebsite.com/plugin-demo)
 - [GitHub Repository](https://github.com/Wyllymk/wd-wordpress-careers-plugin)
