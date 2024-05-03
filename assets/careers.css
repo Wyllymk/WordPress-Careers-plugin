@@ -1,0 +1,161 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  margin: 1rem !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 17, 0, 0.25) !important;
+}
+
+.careers-btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 20px;
+  font-size: 16px;
+  line-height: 1;
+  color: #ba242d;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #ba242d !important;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.careers-btn:hover {
+  outline: 0;
+  background-color: #ba242d;
+  color: #fff;
+  box-shadow: none;
+}
+
+.careers-h3,
+.techn,
+.techn-2 {
+  font-size: 1.15em;
+  font-family: articulat-cf, sans-serif;
+}
+@media screen and (max-width: 567px) {
+  .techn-2 {
+    margin-left: 0 !important;
+  }
+}
+
+.career-cell {
+  padding: 0 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+@media screen and (max-width: 567px) {
+  .career-cell {
+    padding: 0 !important;
+  }
+}
+.careers-btn,
+.careers-btn:hover {
+  padding: 10px 32px !important;
+}
+
+.career-cell p,
+.careers-resume p {
+  margin: 0;
+}
+
+.careers-btn:hover {
+  border: 1px solid;
+}
+
+.red-border-cont {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.careers-h3 {
+  font-weight: 600;
+}
+
+.techn,
+.techn-2 {
+  font-weight: 400;
+}
+
+.techn-2 {
+  color: #bf1e2e;
+}
+
+.c-content {
+  flex-wrap: wrap;
+}
+
+.careers-resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+}
+
+.careers-ul {
+  padding-inline-start: 22px;
+}
+
+.careers-qual {
+  margin-left: 13px;
+}
+
+.careers-div {
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+@media screen and (max-width: 567px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .card {
+    margin: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .careers-sub-heading {
+    padding: 0;
+  }
+
+  .c-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .career-cell {
+    flex-direction: row;
+  }
+}
