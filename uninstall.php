@@ -29,6 +29,3 @@ global $wpdb;
 $wpdb->query("DELETE FROM {$wpdb->prefix}terms WHERE term_id IN (SELECT term_id FROM {$wpdb->prefix}term_taxonomy WHERE taxonomy = 'location')");
 $wpdb->query("DELETE FROM {$wpdb->prefix}term_taxonomy WHERE taxonomy = 'location'");
 $wpdb->query("DELETE FROM {$wpdb->prefix}term_relationships WHERE object_id NOT IN (SELECT id FROM {$wpdb->prefix}posts)");
-
-// Flush rewrite rules to remove any rules associated with the custom post type and taxonomy
-flush_rewrite_rules();
