@@ -117,6 +117,7 @@ if(!(class_exists('WdWordpressCareers'))){
                 'has_archive'        => true,
                 'hierarchical'       => false,
                 'menu_position'      => 20,
+                'menu_icon'          => 'dashicons-chart-area',
                 'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
                 'taxonomies'         => array( 'location' ),
                 'show_in_rest'       => true
