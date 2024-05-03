@@ -10,7 +10,7 @@ if(!defined('WP_UNINSTALL_PLUGIN')){
     exit;
 }
 
-if (!get_option('plugin_do_uninstall', false)) exit;
+// if (!get_option('plugin_do_uninstall', false)) exit;
 
 // Clear database stored data
 // delete custom post type posts
