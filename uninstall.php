@@ -10,7 +10,10 @@ if(!defined('WP_UNINSTALL_PLUGIN')){
     die;
 }
 
+if (!get_option('plugin_do_uninstall', false)) exit;
+
 // Clear database stored data
+// delete custom post type posts
 
 $careers = get_posts( array( 'post_type' => 'careers', 'posts_per_page' => -1 ) );
 
