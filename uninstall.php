@@ -18,7 +18,7 @@ if (!get_option('plugin_do_uninstall', false)) exit;
 $careers = get_posts( array( 'post_type' => 'careers', 'posts_per_page' => -1 ) );
 
 foreach($careers as $career){
-    wp_delete_posts($career->ID, true);
+    wp_delete_post($career->ID, true);
 }
 
 // Access database via SQL
